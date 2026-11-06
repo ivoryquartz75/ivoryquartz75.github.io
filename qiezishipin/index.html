@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>茄子视频在线观看免费-茄子视频免费在线观看_茄子视频高清播放与内容分类</title>
+<meta name="description" content="茄子视频在线观看免费主题首页，汇集电影、剧集、动漫、纪录片等内容分类入口，说明免费观看的清晰度、播放方式与内容选择思路。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2320141d'/%3E%3Cpath d='M20 16c2 6 3 12 2 18 4 6 10 9 16 9 5 0 9-2 12-5-2-2-3-5-3-9-6 4-14 3-19-3-2-4-2-8-1-12z' fill='%23b06cf0'/%3E%3Cpath d='M26 14c2 2 4 3 7 3-1-3-3-5-7-6z' fill='%2363d18b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1d1720;
+  --ink-soft:#4b4152;
+  --muted:#7a6f83;
+  --paper:#faf7fb;
+  --card:#ffffff;
+  --line:#e8dfee;
+  --brand:#6d2f9c;
+  --brand-2:#a45ede;
+  --accent:#2f9e6a;
+  --radius:16px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.75;
+  font-size:16px;
+}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px;}
+
+/* header */
+.site-header{
+  position:sticky;top:0;z-index:30;
+  background:rgba(250,247,251,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;min-height:64px;flex-wrap:wrap;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;letter-spacing:.5px;color:var(--brand);}
+.logo svg{width:32px;height:32px;flex:0 0 auto;}
+nav.main-nav{display:flex;gap:22px;font-size:15px;color:var(--ink-soft);flex-wrap:wrap;}
+nav.main-nav a{padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
+nav.main-nav a:hover{color:var(--brand);border-color:var(--brand-2);}
+
+/* hero */
+.hero{
+  background:
+    radial-gradient(circle at 88% 12%,rgba(164,94,222,.18),transparent 42%),
+    radial-gradient(circle at 8% 88%,rgba(47,158,106,.14),transparent 46%),
+    linear-gradient(160deg,#f6eefc 0%,#faf7fb 62%);
+  border-bottom:1px solid var(--line);
+  padding:52px 0 46px;
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;}
+.hero h1{
+  font-size:clamp(26px,3.6vw,40px);
+  line-height:1.3;
+  margin:0 0 16px;
+  letter-spacing:.5px;
+  font-weight:800;
+  color:var(--ink);
+}
+.hero h1 em{font-style:normal;color:var(--brand);}
+.hero p.lead{margin:0 0 24px;color:var(--ink-soft);font-size:16.5px;max-width:36em;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;border-radius:999px;font-size:15.5px;font-weight:600;
+  transition:.2s;border:1px solid transparent;
+}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 8px 20px -8px rgba(109,47,156,.7);}
+.btn-primary:hover{background:#5a2483;transform:translateY(-1px);}
+.btn-ghost{background:#fff;color:var(--brand);border-color:#dccce9;}
+.btn-ghost:hover{border-color:var(--brand-2);color:#54207a;}
+.hero-note{margin-top:18px;font-size:13.5px;color:var(--muted);}
+.hero-art{
+  border-radius:24px;overflow:hidden;
+  box-shadow:0 24px 50px -28px rgba(60,20,90,.55);
+  border:1px solid #eadff2;background:#1b1220;
+}
+
+/* section basics */
+section.block{padding:52px 0;}
+.section-head{margin-bottom:26px;}
+.section-head .kicker{
+  display:inline-block;font-size:13px;letter-spacing:2px;color:var(--brand-2);
+  font-weight:700;margin-bottom:6px;
+}
+.section-head h2{
+  font-size:clamp(21px,2.5vw,27px);margin:0 0 8px;line-height:1.35;font-weight:800;
+}
+.section-head p{margin:0;color:var(--muted);font-size:15px;max-width:46em;}
+
+/* category grid */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.cat-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 18px;transition:.2s;
+}
+.cat-card:hover{border-color:#d6bfe8;box-shadow:0 12px 26px -18px rgba(80,30,120,.5);transform:translateY(-2px);}
+.cat-card .ic{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:#f3e9fb;margin-bottom:12px;}
+.cat-card h3{margin:0 0 6px;font-size:16.5px;font-weight:700;}
+.cat-card p{margin:0;font-size:13.8px;color:var(--muted);line-height:1.65;}
+
+/* list area */
+.pick{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.pick-item{
+  display:flex;gap:16px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:18px;
+}
+.pick-item .num{
+  flex:0 0 auto;width:44px;height:44px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;color:#fff;background:linear-gradient(140deg,var(--brand-2),var(--brand));
+  font-size:17px;
+}
+.pick-item h3{margin:0 0 4px;font-size:16px;font-weight:700;}
+.pick-item p{margin:0;font-size:14px;color:var(--muted);line-height:1.65;}
+
+/* article */
+.article-box{
+  background:var(--card);border:1px solid var(--line);border-radius:20px;
+  padding:34px 36px;
+}
+.article-box h2{font-size:clamp(20px,2.4vw,25px);margin:0 0 14px;font-weight:800;}
+.article-box h3{font-size:17px;margin:26px 0 8px;font-weight:700;color:var(--brand);}
+.article-box p{margin:0 0 14px;color:var(--ink-soft);font-size:15.5px;}
+.article-box ul{margin:0 0 14px;padding-left:20px;color:var(--ink-soft);font-size:15.5px;}
+.article-box li{margin-bottom:7px;}
+
+/* filter */
+.filter-bar{
+  display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+  margin-bottom:22px;
+}
+.filter-bar input{
+  flex:1 1 240px;min-width:180px;padding:11px 16px;border-radius:999px;
+  border:1px solid var(--line);background:#fff;font-size:15px;color:var(--ink);
+  font-family:inherit;outline:none;
+}
+.filter-bar input:focus{border-color:var(--brand-2);box-shadow:0 0 0 3px rgba(164,94,222,.15);}
+.chip{
+  padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:#fff;
+  cursor:pointer;font-size:14.5px;color:var(--ink-soft);font-family:inherit;transition:.2s;
+}
+.chip:hover{border-color:var(--brand-2);color:var(--brand);}
+.chip.active{background:var(--brand);color:#fff;border-color:var(--brand);}
+.result-line{font-size:14px;color:var(--muted);margin-bottom:16px;}
+.grid-videos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.v-card{
+  background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;
+}
+.v-card .tag{
+  display:inline-block;font-size:12px;padding:2px 10px;border-radius:999px;
+  background:#f3e9fb;color:var(--brand);margin-bottom:8px;font-weight:600;
+}
+.v-card h4{margin:0 0 6px;font-size:15.5px;font-weight:700;}
+.v-card p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.6;}
+.empty-tip{display:none;font-size:15px;color:var(--muted);padding:18px 0;}
+.empty-tip.show{display:block;}
+
+/* faq */
+.faq-item{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:18px 22px;margin-bottom:12px;
+}
+.faq-item h3{margin:0 0 6px;font-size:16px;font-weight:700;}
+.faq-item p{margin:0;font-size:14.8px;color:var(--ink-soft);}
+
+/* download strip */
+.dl-strip{
+  background:linear-gradient(135deg,#2a1636,#4a2363 60%,#6d2f9c);
+  border-radius:22px;color:#f4ecfa;padding:34px 36px;
+  display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;
+}
+.dl-strip h2{margin:0 0 8px;font-size:22px;color:#fff;}
+.dl-strip p{margin:0;font-size:14.8px;color:#d9c8e8;max-width:38em;}
+.btn-dl{
+  display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:999px;
+  background:#fff;color:var(--brand);font-weight:700;font-size:15.5px;
+  pointer-events:none;opacity:.88;
+}
+
+/* footer */
+.site-footer{
+  border-top:1px solid var(--line);background:#fff;padding:34px 0 28px;margin-top:20px;
+}
+.footer-inner{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:14px;color:var(--muted);}
+.footer-brand{font-weight:700;color:var(--brand);font-size:15.5px;margin-bottom:6px;}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap;}
+.footer-links a:hover{color:var(--brand);}
+.copyright{margin-top:20px;padding-top:16px;border-top:1px dashed var(--line);font-size:13px;color:#9a8fa4;}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:28px;}
+  .hero-art{order:-1;max-width:520px;}
+  .cat-grid{grid-template-columns:repeat(2,1fr);}
+  .pick{grid-template-columns:1fr;}
+  .grid-videos{grid-template-columns:repeat(2,1fr);}
+  .article-box{padding:26px 22px;}
+}
+@media (max-width:600px){
+  body{font-size:15.5px;}
+  .header-inner{min-height:auto;padding:12px 0;gap:10px;}
+  nav.main-nav{gap:14px;font-size:14px;}
+  .hero{padding:36px 0 32px;}
+  .hero h1{font-size:25px;}
+  .hero p.lead{font-size:15px;}
+  .btn{padding:11px 20px;font-size:15px;}
+  section.block{padding:38px 0;}
+  .cat-grid{grid-template-columns:1fr 1fr;gap:12px;}
+  .cat-card{padding:16px 14px;}
+  .grid-videos{grid-template-columns:1fr;}
+  .dl-strip{padding:26px 22px;}
+  .article-box{padding:22px 18px;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="茄子视频在线观看免费 首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true" role="img">
+        <rect width="64" height="64" rx="14" fill="#20141d"/>
+        <path d="M20 16c2 6 3 12 2 18 4 6 10 9 16 9 5 0 9-2 12-5-2-2-3-5-3-9-6 4-14 3-19-3-2-4-2-8-1-12z" fill="#b06cf0"/>
+        <path d="M26 14c2 2 4 3 7 3-1-3-3-5-7-6z" fill="#63d18b"/>
+      </svg>
+      <span>茄子视频在线观看免费</span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#categories">内容分类</a>
+      <a href="#picks">本期精选</a>
+      <a href="#library">片库筛选</a>
+      <a href="#guide">观看说明</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>茄子视频在线观看免费</h1>
+        <p class="lead">一个围绕“茄子视频在线观看免费”搭建的内容入口：电影、剧集、动漫、纪录片按分类落位，先看题材与简介，再决定要不要点开播放。页面把内容选择与观看方式讲清楚，让免费在线观看这件事少一点犹豫。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#library">进入片库筛选</a>
+          <a class="btn btn-ghost" href="#categories">浏览内容分类</a>
+        </div>
+        <p class="hero-note">页面内容为静态整理，播放与片源以实际入口为准。</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 520 340" role="img" aria-label="茄子视频在线观看免费 主题插画">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#3a2148"/>
+              <stop offset="1" stop-color="#1b1220"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#b06cf0"/>
+              <stop offset="1" stop-color="#6d2f9c"/>
+            </linearGradient>
+          </defs>
+          <rect width="520" height="340" fill="url(#g1)"/>
+          <circle cx="440" cy="60" r="90" fill="#a45ede" opacity=".16"/>
+          <circle cx="70" cy="300" r="80" fill="#2f9e6a" opacity=".14"/>
+          <rect x="46" y="52" width="330" height="196" rx="16" fill="#2a1a33" stroke="#4b2e5e"/>
+          <path d="M186 112l62 38-62 38z" fill="url(#g2)"/>
+          <rect x="70" y="272" width="230" height="10" rx="5" fill="#3b2747"/>
+          <rect x="70" y="272" width="120" height="10" rx="5" fill="#b06cf0"/>
+          <path d="M404 208c4 12 6 24 4 36 8 12 20 18 32 18 10 0 18-4 24-10-4-4-6-10-6-18-12 8-28 6-38-6-4-8-4-16-2-24z" fill="#b06cf0" opacity=".9"/>
+          <path d="M416 202c4 4 8 6 14 6-2-6-6-10-14-12z" fill="#63d18b"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="categories">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">CONTENT</span>
+        <h2>按内容类型进入，先看题材再点播放</h2>
+        <p>茄子视频在线观看免费的片库通常覆盖多个大类。分类的作用是缩小选择范围，而不是把所有内容堆在一个列表里。</p>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-card">
+          <div class="ic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6d2f9c" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M7 5v14M17 5v14"/></svg>
+          </div>
+          <h3>电影</h3>
+          <p>单片时长完整，适合整段空闲时间观看，简介里能看到类型与年份线索。</p>
+        </article>
+        <article class="cat-card">
+          <div class="ic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6d2f9c" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M8 4v16M16 4v16"/></svg>
+          </div>
+          <h3>剧集</h3>
+          <p>按集推进，适合连续追看，通常需要关注更新节奏与已上线的集数范围。</p>
+        </article>
+        <article class="cat-card">
+          <div class="ic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6d2f9c" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
+          </div>
+          <h3>动漫</h3>
+          <p>季番与剧场版并存，画风与题材差异大，先看标签更容易找到合口味的作品。</p>
+        </article>
+        <article class="cat-card">
+          <div class="ic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6d2f9c" stroke-width="2"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M14 3v6h6"/></svg>
+          </div>
+          <h3>纪录片</h3>
+          <p>偏纪实与知识向，节奏相对平缓，适合想安静看完一段完整叙事的观众。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="picks" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">SELECTION</span>
+        <h2>本期精选：四个能直接决定“看什么”的角度</h2>
+        <p>与其给出一长串片名，不如先说明挑选逻辑。以下四条对应不同的观看场景。</p>
+      </div>
+      <div class="pick">
+        <article class="pick-item">
+          <div class="num">01</div>
+          <div>
+            <h3>想快速看完一部</h3>
+            <p>优先挑时长在常规单片范围内的作品，简介里的类型与简介段落足够判断是否合口味，避免开播后反复退出。</p>
+          </div>
+        </article>
+        <article class="pick-item">
+          <div class="num">02</div>
+          <div>
+            <h3>想连续追一段时间</h3>
+            <p>剧集与动漫更适合，但要先确认已上线的集数，再决定是否把整季列入观看计划。</p>
+          </div>
+        </article>
+        <article class="pick-item">
+          <div class="num">03</div>
+          <div>
+            <h3>想边看边放松</h3>
+            <p>轻喜剧、生活向内容观感负担小，适合在碎片时间打开，不必强记复杂的人物关系。</p>
+          </div>
+        </article>
+        <article class="pick-item">
+          <div class="num">04</div>
+          <div>
+            <h3>想获得信息与观点</h3>
+            <p>纪录片与纪实类内容更合适，观看前读一遍简介，能更快判断它讲的是哪一段事实。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="library">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">LIBRARY</span>
+        <h2>片库筛选：用关键词和类型找片</h2>
+        <p>输入片名片段或题材词，配合类型筛选，可快速缩小范围。以下条目为分类示例，用于演示筛选逻辑。</p>
+      </div>
+      <div class="filter-bar" role="search">
+        <input type="search" id="searchInput" placeholder="搜索片名或题材，例如：悬疑、纪录片" aria-label="搜索片名或题材">
+        <button class="chip active" data-type="全部" type="button">全部</button>
+        <button class="chip" data-type="电影" type="button">电影</button>
+        <button class="chip" data-type="剧集" type="button">剧集</button>
+        <button class="chip" data-type="动漫" type="button">动漫</button>
+        <button class="chip" data-type="纪录片" type="button">纪录片</button>
+      </div>
+      <div class="result-line" id="resultLine" aria-live="polite">共 6 条示例条目</div>
+      <div class="grid-videos" id="videoGrid">
+        <article class="v-card" data-type="电影" data-text="城市夜航 悬疑">
+          <span class="tag">电影</span>
+          <h4>城市夜航</h4>
+          <p>悬疑题材，围绕一桩夜间失踪展开，适合喜欢跟随线索推进的观众。</p>
+        </article>
+        <article class="v-card" data-type="剧集" data-text="长巷人家 生活 家庭">
+          <span class="tag">剧集</span>
+          <h4>长巷人家</h4>
+          <p>家庭生活向，节奏平缓，人物关系清晰，适合连续追看。</p>
+        </article>
+        <article class="v-card" data-type="动漫" data-text="星轨列车 冒险">
+          <span class="tag">动漫</span>
+          <h4>星轨列车</h4>
+          <p>冒险类季番，世界观设定完整，单集推进较快。</p>
+        </article>
+        <article class="v-card" data-type="纪录片" data-text="山与河 自然">
+          <span class="tag">纪录片</span>
+          <h4>山与河</h4>
+          <p>自然纪实，镜头以地理与季节变化为主，信息密度适中。</p>
+        </article>
+        <article class="v-card" data-type="电影" data-text="夏日回声 青春">
+          <span class="tag">电影</span>
+          <h4>夏日回声</h4>
+          <p>青春题材单片，情绪线完整，适合一次看完。</p>
+        </article>
+        <article class="v-card" data-type="剧集" data-text="账本之外 职场">
+          <span class="tag">剧集</span>
+          <h4>账本之外</h4>
+          <p>职场题材，以项目推进为主线，人物处境贴近现实。</p>
+        </article>
+      </div>
+      <p class="empty-tip" id="emptyTip">没有匹配的条目，换个关键词或切回“全部”试试。</p>
+    </div>
+  </section>
+
+  <section class="block" id="guide" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="article-box">
+        <h2>茄子视频在线观看免费怎么看更省时间</h2>
+        <p>很多人打开茄子视频在线观看免费的第一反应，是直接翻列表。列表越翻越长，反而更难决定。更省时间的做法是先把需求说清楚：今天是想看一部完整电影，还是想随便找点内容打发零散时间。前者需要关注时长与类型，后者更适合轻量短片或生活向剧集。</p>
+        <h3>先看简介，再决定播放</h3>
+        <p>简介通常包含题材、大致剧情方向与风格提示。花半分钟读完，比点进去看两分钟再退出要划算。茄子视频在线观看免费的条目如果带有类型标签，可以优先用标签做第一轮筛选，再用片名或关键词做第二轮。</p>
+        <h3>关于“免费”与清晰度</h3>
+        <ul>
+          <li>免费在线观看通常意味着无需额外付费即可打开播放页，具体片源与清晰度以实际页面提供为准。</li>
+          <li>不同网络环境下，加载速度会有差异，建议在网络稳定时观看。</li>
+          <li>若某条内容无法播放，可回到分类页换一个同类条目，不必停留在同一页面等待。</li>
+        </ul>
+        <h3>按场景选择类型</h3>
+        <p>碎片时间适合短视频或单集内容，整段空闲更适合电影与纪录片。茄子视频在线观看免费的内容分类正是围绕这个差异组织的：电影看完整叙事，剧集看持续推进，动漫看设定与画风，纪录片看事实与观察。</p>
+        <h3>浏览习惯上的两个提醒</h3>
+        <p>一是别在同一个分类里反复刷新，换个类型往往更快找到想看的；二是遇到简介写得含糊的条目，可以先记下片名，等有整块时间再回来看。茄子视频在线观看免费只是入口，真正决定体验的还是你选中的那部作品。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">FAQ</span>
+        <h2>常见问题</h2>
+        <p>围绕免费在线观看的几个高频疑问，按页面现有信息作答。</p>
+      </div>
+      <div class="faq-item">
+        <h3>茄子视频在线观看免费需要注册吗？</h3>
+        <p>页面不涉及账号体系说明，是否需要注册以实际入口的提示为准。本页只承担内容分类与选择引导。</p>
+      </div>
+      <div class="faq-item">
+        <h3>为什么有的条目打不开？</h3>
+        <p>片源可用性会随时间和网络情况变化。遇到无法播放的条目，建议返回分类页选择同类内容。</p>
+      </div>
+      <div class="faq-item">
+        <h3>能不能在手机上观看？</h3>
+        <p>页面本身适配手机屏幕，分类、筛选与简介均可正常阅读。播放体验取决于实际入口在移动端的支持情况。</p>
+      </div>
+      <div class="faq-item">
+        <h3>片库里的条目是完整片单吗？</h3>
+        <p>不是。页面中的条目为分类示例，用于说明筛选与选择思路，不代表完整片库范围。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0;">
+    <div class="wrap">
+      <div class="dl-strip">
+        <div>
+          <h2>把分类与筛选逻辑带走</h2>
+          <p>整理了一份按类型与观看场景划分的选片清单，方便在离线时对照参考。文件地址将在后续替换为正式下载链接。</p>
+        </div>
+        <a class="btn-dl" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>
+          下载
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">茄子视频在线观看免费</div>
+        <div>内容分类与观看引导主题首页，条目为示例，片源以实际入口为准。</div>
+      </div>
+      <div class="footer-links">
+        <a href="#categories">内容分类</a>
+        <a href="#picks">本期精选</a>
+        <a href="#library">片库筛选</a>
+        <a href="#guide">观看说明</a>
+        <a href="#faq">常见问题</a>
+      </div>
+    </div>
+    <div class="copyright">本站为茄子视频在线观看免费主题信息页面，不存储任何视频文件。页面文字与图示仅用于内容组织说明。</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var input = document.getElementById('searchInput');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#videoGrid .v-card'));
+  var line = document.getElementById('resultLine');
+  var empty = document.getElementById('emptyTip');
+  var currentType = '全部';
+
+  function apply(){
+    var q = (input.value || '').trim().toLowerCase();
+    var shown = 0;
+    cards.forEach(function(card){
+      var typeOk = currentType === '全部' || card.getAttribute('data-type') === currentType;
+      var text = (card.getAttribute('data-text') || '') + ' ' + card.textContent;
+      var qOk = !q || text.toLowerCase().indexOf(q) > -1;
+      var ok = typeOk && qOk;
+      card.style.display = ok ? '' : 'none';
+      if(ok) shown++;
+    });
+    line.textContent = '共 ' + shown + ' 条示例条目';
+    empty.classList.toggle('show', shown === 0);
+  }
+
+  chips.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      chips.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      currentType = btn.getAttribute('data-type');
+      apply();
+    });
+  });
+
+  input.addEventListener('input', apply);
+  apply();
+})();
+</script>
+</body>
+            </html>
